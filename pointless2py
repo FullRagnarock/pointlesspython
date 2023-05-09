@@ -1,0 +1,30 @@
+print("please enter your name")
+name = input()
+
+print ("hello ",name," lets do some calculations")
+print(" press 1 for area of a square or rectangle\n press 2 for area of a triangle\n press 3 for area of a circle")
+responce = input()
+
+if (responce == "1"):
+    print("please enter the base")
+    base = input()
+    b = int(base)
+    print ("please enter the height")
+    height = input()
+    h = int(height)
+    print ("the area of the rectangle is ", b*h)
+elif(responce == "2"):
+    print("please enter the base")
+    base = input()
+    b = int(base)
+    print ("please enter the height")
+    height = input()
+    h = int(height)
+    print("the area of the triangle is ", .5*b*h)
+else:
+    print("please enter the radious")
+    radious= input()
+    r = int(radious)
+    pi = 3.141
+    print("area is ", pi*(r*r))
+    

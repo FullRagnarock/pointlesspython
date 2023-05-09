@@ -1,0 +1,42 @@
+name = input("please enter your name")  ##this line of code is only used to greet the user
+print ("hello ",name," lets do some calculations")
+##the next line of code was commented out once I figured out I can write statements in the input line
+##In C# i would have had to write 2 lines of code instead of just one. console.writeline and a console.readline would have done the same thing in the other language.
+##print(" press 1 for area of a square or rectangle\n press 2 for area of a triangle\n press 3 for area of a circle")
+responce = input("""Press 1 for area of a square or rectangle
+Press 2 for area of a triangle
+Press 3 for area of a circle
+Press 4 to calculate the area of a regular polygon
+Press 5 for another message""")
+##written with tripple quotes to help with formatting.
+
+if (responce == "1"):
+    print("please enter the length")
+    length = input()
+    l = int(length)
+    print ("please enter the width")
+    width = input()
+    w = int(width)
+    print ("the area of the rectangle is ", b*h)
+elif(responce == "2"):
+    print("please enter the base")
+    base = input()
+    b = int(base)
+    print ("please enter the height")
+    height = input()
+    h = int(height)
+    print("the area of the triangle is ", .5*b*h)
+elif(responce== "3"):
+    print("please enter the radious")
+    radious= input()
+    r = int(radious)
+    pi = 3.141
+    print("area is ", pi*(r*r))
+elif(responce == "4"):
+    apothm= input("please input the apothm")
+    peremeter= input("please input the peremeter")
+    apothm = int(apothm)
+    peremeter = int(peremeter)
+    print("The area of the polygon is ", .5*apothm*peremeter)
+else:
+    print ("I have made a horrible mistake")
